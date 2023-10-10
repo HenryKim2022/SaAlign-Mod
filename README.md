@@ -50,27 +50,29 @@
 
 6. Java JDK for Linux
 
-   ### INSTALL JAVA JDK
+   ### Check Java Ver
+
+   ```
+   java -version
+   ```
+
+   If the linux not have Java Installed do install it using CLI below.
+
+   ### install java JDK
 
    ```
    sudo apt update
    sudo apt install default-jdk
    ```
 
-   ### CHECK JAVA VER
-
-   ```
-   java -version
-   ```
-
-   ### SET JAVA_HOME
+   ### set JAVA_HOME
 
    ```
    export JAVA_HOME=/usr/lib/jvm/default-java # Adjust the path if needed
    export PATH=$PATH:$JAVA_HOME/bin
    ```
 
-   ### RESTART TERMINAL
+   ### restart terminalL
 
    ```
    source ~/.bashrc # or source ~/.zshrc for Zsh
@@ -84,7 +86,7 @@
    pip install pyspark
    ```
 
-   ### Note: This lLibraries is a must to be Pre Installed
+   ### Note: This Libraries is a must to be Pre Installed
 
    [pyspark](https://spark.apache.org/docs/latest/api/python/) ---must be compatible with the corresponding Python version to run
 
