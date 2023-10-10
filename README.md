@@ -2,12 +2,52 @@
 
 ## Software/Tools that Need to be Installed
 
-1. Oracle Virtual Machine Lastest ver(for Windows)
-2. Linux OS lastest ver(im using Kali Linux)
+1. [Oracle Virtual Machine Lastest ver(for Windows)](https://download.virtualbox.org/virtualbox/7.0.10/VirtualBox-7.0.10-158379-Win.exe)
+2. [Linux OS lastest ver(im using Kali Linux)](https://mirror.primelink.net.id/kali-images/kali-2023.3/kali-linux-2023.3-installer-amd64.iso)
 3. VSCode for Linux lastest ver
+   ### download & install VSCode(CLI):
+   ```
+   wget -O vscode.deb https://code.visualstudio.com/sha/download\?build\=stable\&os\=linux-deb-x64
+   sudo dpkg -i vscode.deb
+   ```
+   sudo apt install -f
+   ### run VSCode:
+   `code`
+   ### manual update VSCode:
+   ```
+   sudo apt update
+   sudo apt upgrade code
+   ```
 4. Python Extension (for Linux VSCode)
+   ```
+   Do it manually in VSCode Extension Tab, search for 'Python' (it's the most top in list), then click install.
+   ```
 5. Python v3.11 for Linux lastest ver
-6. Pyspark lastest ver libraries for Python
+
+   ### download & install Python 3.11(CLI):
+
+   ### install py depedency
+
+   ```
+   sudo apt update
+   sudo apt install -y build-essential libssl-dev zlib1g-dev \
+   libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm \
+   libncurses5-dev libncursesw5-dev xz-utils tk-dev libffi-dev liblzma-dev
+   ```
+
+   ### install the PY IDE(advanced method)
+
+   ```
+   wget https://www.python.org/ftp/python/3.11.0/Python-3.11.0.tgz
+   tar -xf Python-3.11.0.tgz
+   cd Python-3.11.0 6. Pyspark lastest ver libraries for Python
+   ```
+
+6. Pyspark Libraries for VSCode lastest ver
+   In Linux VSCode, open terminal then type:
+   ```
+   pip install pyspark
+   ```
 
 ## Libraries that Need to be Pre Installed
 
@@ -17,23 +57,22 @@ PySpark is an interface for Apache Spark in Python. It not only allows you to wr
 
 ## Instruction
 
-1. Download **_SaAlign_package-1.0.tar.gz_** from website： https://github.com/YangyiLab/SaAlign.
-2. Unzip the downloaded file to a folder.
-3. Enter the folder directory, open the terminal and enter the command :`sudo python setup.py`.
-4. When writing Python scripts,Using Python statements: `from SaAlign.SaAlign import sa_align`, Using sa\_ align for MSA operation.
+1. Download **SaAlign mod** from website： https://github.com/HenryKim2022/SaAlign-Mod.
+2. Make sure all software/tools listed above done well.
+3. When writing Python scripts,Using Python statements: `from SaAlign import sa_align`, Using sa\_ align for MSA operation.
 
-## Parameter details:
+## Parameter details for RUN.py:
 
 ### Local Node Examples
 
 ```py
-sa_align(memory,application_name,filename,basepath,partition = 5,url = "local[*]")
+sa_align(memory,application_name,filename,basepath,partition = 1,url = "local[*]")
 ```
 
 ### Spark Cluster Example
 
 ```py
-sa_align(memory,application_name,filename,basepath,partition = 5,url = "url of your spark cluster")
+sa_align(memory,application_name,filename,basepath,partition = 1,url = "url of your spark cluster")
 ```
 
 ## Parameter description
@@ -46,7 +85,7 @@ eg."2g","512m"
 ### application_name
 
 The name of the starting task.
-eg."First_App"
+eg."SaAlign_MultipleDNAorRNA"
 
 ### filename
 
@@ -55,12 +94,12 @@ eg."virus.fa"
 
 ### basepath
 
-After extracting **_SaAlign_package-1.0.tar.gz_** ,the path of **_SaAlign.py_**
+After extracting **_the downloaded SaAlign_Mod_** ,the path of **_SaAlign.py_**
 
 ### partition
 
 The number of all partitions specified when running the program,which can be specified by yourself
-default = 5
+default = 1
 
 ### url
 
