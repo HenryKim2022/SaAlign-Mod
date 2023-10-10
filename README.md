@@ -48,7 +48,36 @@
    cd Python-3.11.0 6. Pyspark lastest ver libraries for Python
    ```
 
-6. Pyspark Libraries for VSCode lastest ver
+6. Java JDK for Linux
+
+   ### INSTALL JAVA JDK
+
+   ```
+   sudo apt update
+   sudo apt install default-jdk
+   ```
+
+   ## CHECK JAVA VER
+
+   ```
+   java -version
+   ```
+
+   ## SET JAVA_HOME
+
+   ```
+   export JAVA_HOME=/usr/lib/jvm/default-java # Adjust the path if needed
+   export PATH=$PATH:$JAVA_HOME/bin
+   ```
+
+   ## RESTART TERMINAL
+
+   ```
+   source ~/.bashrc # or source ~/.zshrc for Zsh
+
+   ```
+
+7. Pyspark Libraries for VSCode lastest ver
    In Linux VSCode, open terminal then type:
 
    ```
@@ -131,3 +160,7 @@ When running the program, the URL address of the spark cluster (eg."spark://192.
 ## Contact
 
 For bug reports or suggestions, please the original owner at princeyuansql AT gmail DOT com
+
+```
+
+```
