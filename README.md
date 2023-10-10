@@ -72,7 +72,7 @@
    export PATH=$PATH:$JAVA_HOME/bin
    ```
 
-   ### restart terminalL
+   ### restart terminal
 
    ```
    source ~/.bashrc # or source ~/.zshrc for Zsh
