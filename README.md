@@ -127,7 +127,7 @@ eg."SaAlign_MultipleDNAorRNA"
 ### filename
 
 Name of fasta file for MSA operation
-eg."virus.fa"
+eg."covid_10.fasta"
 
 ### basepath
 
