@@ -57,20 +57,20 @@
    sudo apt install default-jdk
    ```
 
-   ## CHECK JAVA VER
+   ### CHECK JAVA VER
 
    ```
    java -version
    ```
 
-   ## SET JAVA_HOME
+   ### SET JAVA_HOME
 
    ```
    export JAVA_HOME=/usr/lib/jvm/default-java # Adjust the path if needed
    export PATH=$PATH:$JAVA_HOME/bin
    ```
 
-   ## RESTART TERMINAL
+   ### RESTART TERMINAL
 
    ```
    source ~/.bashrc # or source ~/.zshrc for Zsh
