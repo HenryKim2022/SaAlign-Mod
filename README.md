@@ -31,8 +31,6 @@
    ```
 5. Python v3.11 for Linux lastest ver
 
-   ### download & install Python 3.11(CLI):
-
    ### install py depedency
 
    ```
