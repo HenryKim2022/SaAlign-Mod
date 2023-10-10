@@ -86,6 +86,22 @@
    pip install pyspark
    ```
 
+   Then, in the Linux Terminal:
+
+   ```
+   wget https://www.apache.org/dyn/closer.lua/spark/spark-3.1.2/spark-3.1.2-bin-hadoop3.2.tgz
+   tar -zxvf spark-3.1.2-bin-hadoop3.2.tgz
+   sudo mv spark-3.1.2-bin-hadoop3.2 /opt/spark
+   export SPARK_HOME=/opt/spark
+   export PATH=$PATH:$SPARK_HOME/bin
+   source ~/.bashrc  # or source ~/.zshrc for Zsh
+   cd /opt/spark/conf
+   cp spark-env.sh.template spark-env.sh
+   cp spark-defaults.conf.template spark-defaults.conf
+   spark-shell
+
+   ```
+
    ### Note: This Libraries is a must to be Pre Installed
 
    [pyspark](https://spark.apache.org/docs/latest/api/python/) ---must be compatible with the corresponding Python version to run
