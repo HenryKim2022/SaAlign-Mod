@@ -5,19 +5,26 @@
 1. [Oracle Virtual Machine Lastest ver(for Windows)](https://download.virtualbox.org/virtualbox/7.0.10/VirtualBox-7.0.10-158379-Win.exe)
 2. [Linux OS lastest ver(im using Kali Linux)](https://mirror.primelink.net.id/kali-images/kali-2023.3/kali-linux-2023.3-installer-amd64.iso)
 3. VSCode for Linux lastest ver
+
    ### download & install VSCode(CLI):
+
    ```
    wget -O vscode.deb https://code.visualstudio.com/sha/download\?build\=stable\&os\=linux-deb-x64
    sudo dpkg -i vscode.deb
-   ```
    sudo apt install -f
+   ```
+
    ### run VSCode:
+
    `code`
+
    ### manual update VSCode:
+
    ```
    sudo apt update
    sudo apt upgrade code
    ```
+
 4. Python Extension (for Linux VSCode)
    ```
    Do it manually in VSCode Extension Tab, search for 'Python' (it's the most top in list), then click install.
