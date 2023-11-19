@@ -89,7 +89,7 @@
    Then, in the Linux Terminal:
 
    ```
-   wget https://www.apache.org/dyn/closer.lua/spark/spark-3.1.2/spark-3.1.2-bin-hadoop3.2.tgz
+   wget https://archive.apache.org/dist/spark/spark-3.1.2/spark-3.1.2-bin-hadoop3.2.tgz
    tar -zxvf spark-3.1.2-bin-hadoop3.2.tgz
    sudo mv spark-3.1.2-bin-hadoop3.2 /opt/spark
    export SPARK_HOME=/opt/spark
@@ -101,6 +101,8 @@
    spark-shell
 
    ```
+   Or download it manually then do the extract using `-zxvf spark-3.1.2-bin-hadoop3.2.tgz`.
+
 
    ### Note: This Libraries is a must to be Pre Installed
 
