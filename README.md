@@ -84,8 +84,9 @@
 
    ```
    pip install pyspark
+   sudo apt install bash-builtins
    ```
-
+   
    Then, in the Linux Terminal:
 
    ```
