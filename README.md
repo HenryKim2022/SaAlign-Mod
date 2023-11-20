@@ -183,7 +183,7 @@ When running the program, the URL address of the spark cluster (eg."spark://192.
 For bug reports or suggestions, please the original owner at princeyuansql AT gmail DOT com
 
 
-# TIPS:
+## TIPS:
 1. To Run wget session in the background with nohup command.
 ```
 nohup wget -q 'https://domain/path/to/url/file.tar.gz &
