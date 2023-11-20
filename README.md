@@ -188,5 +188,10 @@ TIPS:
 ```
 nohup wget -q 'https://domain/path/to/url/file.tar.gz &
 exit
-
 ```
+2. To continue Wget Broken Session Download:
+```
+ wget -c https://archive.apache.org/dist/spark/spark-3.1.2/spark-3.1.2-bin-hadoop3.2.tgz
+```
+
+
