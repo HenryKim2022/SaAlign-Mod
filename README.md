@@ -45,7 +45,7 @@
    ```
    wget https://www.python.org/ftp/python/3.11.0/Python-3.11.0.tgz
    tar -xf Python-3.11.0.tgz
-   cd Python-3.11.0 6. Pyspark lastest ver libraries for Python
+   cd Python-3.11.0
    ```
 
 6. Java JDK for Linux
